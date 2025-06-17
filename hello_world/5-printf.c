@@ -3,9 +3,9 @@
 /**
 * main - Entry point
 *
-* Description: 'the program's description'
+* Description: Longer description of the function
 *
-* return 0
+* Return: 0
 */
 int main(void)
 {
