@@ -21,6 +21,7 @@ putchar(' ');
 }
 else
 {
+putchar(num);
 putchar('\n');
 }
 return (0);
