@@ -8,6 +8,8 @@
 *Prototype : int _isalpha(int c);
 *Renvoie 1 si c est une lettre, minuscule ou majuscule.
 *Renvoie 0 sinon.
+*
+* Return: 0
 */
 
 int _isalpha(int c)
