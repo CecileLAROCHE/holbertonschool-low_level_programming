@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - Entry point
+* print_alphabet - Entry point
 *
 * Description: imprime 1 fois l'alphabet
 */

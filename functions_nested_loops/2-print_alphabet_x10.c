@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
-* main - Entry point
+* print_alphabet_x10 - Entry point
 *
 * Description: ecrire 10 fois l'alphabet en minucule
 * suivi par une nouvelle ligne
 *
 * Return: 0
 */
-int main(void)
+
+void print_alphabet_x10(void)
+
 {char alphabet;
 char repetition;
 
