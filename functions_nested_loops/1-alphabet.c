@@ -3,19 +3,15 @@
 /**
 * main - Entry point
 *
-* Description: Longer description of the function
-*
-* Return: 0
+* Description: imprime 1 fois l'alphabet
 */
-int main(void)
+void print_alphabet(void)
 {
 char alphabet;
 
 for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
-{
 _putchar(alphabet);
-}
+
 _putchar('\n');
 
-	return (0);
 }
