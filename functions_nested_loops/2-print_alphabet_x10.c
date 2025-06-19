@@ -16,11 +16,10 @@ char repetition;
 
 for (repetition = '0'; repetition <= '9' ; repetition++)
 {
-	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
 	_putchar(alphabet);
 	}
 	_putchar('\n');
 }
-	return (0);
 }
