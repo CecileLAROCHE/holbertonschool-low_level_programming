@@ -2,7 +2,7 @@
 
 /**
 * _islower - Entry point
-*@c: The character to be checked.
+* @c: The character to be checked.
 * Description: Écrivez une fonction qui vérifie la présence de minuscules.
 *
 *Prototype : int _islower(int c);

@@ -23,8 +23,3 @@ for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	_putchar('\n');
 }
 }
-
-int _islower(int c)
-{
-	return 0;
-}
