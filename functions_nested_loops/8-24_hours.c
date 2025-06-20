@@ -2,8 +2,8 @@
 
 /**
 *jack_bauer - Entry point
-* @hh: the character to be print
-* @mm: the character to be print
+*
+*
 *
 *
 *
@@ -18,11 +18,11 @@ for (hh = 0 ; hh <= 23 ; hh++)
 {
 	for (mm = 0 ; mm <= 59 ; mm++)
 	{
-	_putchar((hh / 10)+ '0');
-	_putchar((hh % 10)+ '0');
+	_putchar((hh / 10) + '0');
+	_putchar((hh % 10) + '0');
 	_putchar(':');
-	_putchar(mm / 10);
-	_putchar(mm % 10);
+	_putchar((mm / 10) + '0');
+	_putchar((mm % 10) + '0');
 	_putchar('\n');
 	}
 }
