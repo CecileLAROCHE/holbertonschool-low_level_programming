@@ -31,8 +31,8 @@ for (facteur1 = 0 ; facteur1 <= 9 ; facteur1++)
 		if (produit <= 9)
 			_putchar(' ');
 		else
-			_putchar((produit / 10));
-		_putchar((produit % 10));
+			_putchar((produit / 10) + '0');
+		_putchar((produit % 10) + '0');
 		}
 	_putchar('\n');
 	}
