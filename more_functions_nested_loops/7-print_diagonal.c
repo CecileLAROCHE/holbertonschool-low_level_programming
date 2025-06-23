@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*void print_diagonal - Entry point
+*print_diagonal - Entry point
 *@n:nombre de caractère à afficher
 *space: nb d'espace
 *

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*Main - entry point
+*main - entry point
 *num: jjjjjjjj
 *
 *Le test « Fizz-Buzz » est une question d'entretien conçue pour éliminer
