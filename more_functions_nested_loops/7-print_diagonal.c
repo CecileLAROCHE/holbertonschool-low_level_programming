@@ -3,6 +3,7 @@
 /**
 *void print_diagonal - Entry point
 *@n:nombre de caractère à afficher
+*@s: nb d'espace
 *
 *Écrivez une fonction qui trace une diagonale sur le terminal.
 *
@@ -17,19 +18,21 @@ void print_diagonal(int n)
 
 {
 int i;
+int s;
 
-if (n <= 0)
+if (n > 0)
 {
-_putchar('\n');
-}
-else
-{
-	for (i = 0; i < (n); i++)
+	for (i = 0; i <= n; i++)
 	{
-		_putchar(' ');
+		for (s = 0 ; s < n; s++)
+			_putchar('1');
+		_putchar('\\');
 	}
-	_putchar('/');
+	if (n == (n - 1))
+	{
+		continue;
+
+	_putchar('\n');
+}
 _putchar('\n');
 }
-}
-
