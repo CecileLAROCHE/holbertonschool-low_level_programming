@@ -24,24 +24,27 @@ int main(void)
 {
 char num;
 
-for (num = '0' ; num <= '100' ; num++)
+for (num = 1 ; num <= 100 ; num++)
 
 if (num % 3 == 0 && num % 5) 
 {
-	 FizzBuzz;
+	printf("FizzBuzz ");
 }
 else if (num % 3 == 0)
 	{
-	result =Fizz;
+	printf("Fizz ");
 	}
 	else if (num % 5 == 0)
 		{
-		result = Buzz;
+		printf("Buzz ");
 		}
 		else
 		{
-		result = num;
+		printf("%d ", num);
 		}
-		return result;
-	}
 
+
+		printf(" ");
+printf("\n");
+return (0);
+}
