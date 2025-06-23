@@ -17,7 +17,7 @@
 *Chaque nombre ou mot doit être séparé par un espace.
 *Vous êtes autorisé à utiliser la bibliothèque standard.
 *
-* Return: void
+* Return: 0
 */
 
 int main(void)
@@ -26,7 +26,7 @@ char num;
 
 for (num = 1 ; num <= 100 ; num++)
 
-if (num % 3 == 0 && num % 5) 
+if (num % 3 == 0 && num % 5)
 {
 	printf("FizzBuzz ");
 }
@@ -42,8 +42,6 @@ else if (num % 3 == 0)
 		{
 		printf("%d ", num);
 		}
-
-
 		printf(" ");
 printf("\n");
 return (0);
