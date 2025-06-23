@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*print_line: entry point
-*@n:
+*print_line - entry point
+*@n:nombre de caractère à afficher
 *
 *Écrivez une fonction qui trace une ligne droite dans le terminal.
 *
@@ -16,13 +16,13 @@
 
 void print_line(int n)
 {
-int i = 0;
+int i;
 
 if (n > 0)
 {
-	while (i = n, i++)
+	for (i = 0; i< n; i++)
 	{
-	_putchar('_');
+		_putchar('_');
 	}
 }
 _putchar('\n');
