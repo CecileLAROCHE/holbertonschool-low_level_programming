@@ -42,6 +42,7 @@ else if (num % 3 == 0)
 		{
 		printf("%d", num);
 		}
+if (num < 100)
 printf(" ");
 }
 printf("\n");
