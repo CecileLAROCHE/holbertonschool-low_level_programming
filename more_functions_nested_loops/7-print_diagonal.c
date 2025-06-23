@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-*void print_diagonal - entry point
+*void print_diagonal - Entry point
+*@n:nombre de caractère à afficher
 *
 *Écrivez une fonction qui trace une diagonale sur le terminal.
 *
@@ -19,12 +20,12 @@ int i;
 
 if (n > 0)
 {
-	for (i = 0; i< n; i++)
+	for (i = 0; i < (n - 1); i++)
 	{
-		_putchar('_');
+		_putchar(' ');
 	}
+else
+	_putchar('/');
 }
-
-
-
+_putchar('\n');
 }
