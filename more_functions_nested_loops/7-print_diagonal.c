@@ -24,7 +24,9 @@ if (n > 0)
 	{
 		_putchar(' ');
 	}
+}
 else
+{
 	_putchar('/');
 }
 _putchar('\n');
