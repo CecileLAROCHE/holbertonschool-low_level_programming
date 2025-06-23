@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* more_numbers:  Écrivez une fonction qui affiche 10 fois les nombres,
+* more_numbers - Écrivez une fonction qui affiche 10 fois les nombres,
 *de 0 à 14, suivis d'un saut de ligne.
 *r: repétition
 *n: numbers

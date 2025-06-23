@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
-* print_most_numbers: Écrivez une fonction qui affiche les nombres de 0 à 9,
+*print_most_numbers - entry point
+*
+*Écrivez une fonction qui affiche les nombres de 0 à 9,
 *suivis d'un saut de ligne.
 *
 *Prototype : void print_most_numbers(void);
 *N'affichez pas 2 et 4.
 *Vous ne pouvez utiliser _putchar que deux fois dans votre code.
+*
+* Return: void
 */
 
 void print_most_numbers(void)
