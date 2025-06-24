@@ -2,8 +2,8 @@
 
 /**
 *swap_int - main entry
-*@a:pointer
-*@b: POINTER
+*@a: première int
+*@b: seconde int
 *
 *Écrivez une fonction qui échange les valeurs de deux entiers.
 */
