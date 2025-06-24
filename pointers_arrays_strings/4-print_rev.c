@@ -14,8 +14,7 @@ void print_rev(char *s)
 {
 int lenght;
 int index = 0;
-
-while (*s++)
+while (s[index++])
 	lenght++;
 /*calcul nb caractère*/
 
