@@ -11,23 +11,21 @@
 void print_triangle(int size)
 
 {
-int ligne, p, np;
+int hash;
+int index;
 
 if (size > 0)
 	{
-	for (ligne = 0; ligne < size; ligne++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (p = 1; p < size; p++)
-			{
-				
-					_putchar(65);
-				
-				
-			
-			}
-		_putchar(35);
-		_putchar('\n');}
+			for (index = size - hash; index > 0; index--)
+				_putchar(' ');
+			for (index = 0; index < hash; index++)
+				_putchar('#');
+			if (hash == size)
+				continue;
+			_putchar('\n');
+		}
 	}
-else
 _putchar('\n');
 }
