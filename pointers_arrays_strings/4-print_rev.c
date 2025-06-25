@@ -12,14 +12,13 @@
 
 void print_rev(char *s)
 {
-int lenght;
-int index = 0;
-while (s[index++])
-	lenght++;
-/*calcul nb caractère*/
+int index;
 
-for (index = lenght - 1; index >= 0; index--)
-_putchar(s[index]);
-
+	for (index = 0; s[index] != '\0'; index++)
+		;
+	for (index = index - 1; s[index] != '\0'; index--)
+	{
+		_putchar(s[index]);
+	}
 _putchar('\n');
 }
