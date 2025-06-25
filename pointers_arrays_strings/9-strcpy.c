@@ -17,10 +17,11 @@ char *_strcpy(char *dest, char *src)
 int index = 0;/*position sur la chaine de caractère*/
 
 for (index = 0; src[index] != '\0'; index++)
+
 	{
 	dest[index] = src[index];
-	index++;
+	
 	}
-	dest = "\0";
+	dest[index + 1] = '\0';
 return(dest);
 }
