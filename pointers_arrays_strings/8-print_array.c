@@ -3,7 +3,7 @@
 
 /**
 *print_array - entry
-*@a: tttt
+*@a: tableau d'entier
 *@n: le nombre d'éléments du tableau à afficher.
 *
 *Écrivez une fonction qui affiche n éléments d'un tableau d'entiers,
@@ -21,14 +21,16 @@ void print_array(int *a, int n)
 int index = 0;/*position sur la chaine de caractère*/
 
 /*calcul du nombre de caractères*/
-while (a[index++])
-	n++;
+/*while (a[index++])
+	n++;*/
 
-for (index = 0; index <= n ; index++)
+for (index = 0; index < n ; index++)
 	{
 	printf("%d, ", a[index]);
+	
+if (index == n - 1)
+continue;
 	}
-
 
 putchar('\n');
 }
