@@ -20,17 +20,16 @@ void print_array(int *a, int n)
 {
 int index = 0;/*position sur la chaine de caractère*/
 
-/*calcul du nombre de caractères*/
-/*while (a[index++])
-	n++;*/
-
 for (index = 0; index < n ; index++)
 	{
-	printf("%d, ", a[index]);
-	
+	printf("%d", a[index]);
+
 if (index == n - 1)
-continue;
+	{
+	continue;
 	}
+printf(", ");
+}
 
 putchar('\n');
 }
