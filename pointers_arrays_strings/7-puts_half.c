@@ -23,8 +23,19 @@ int half;/*moitier de la chaine*/
 while (str[index++])
 	length++;
 
-/*odd = size/2 +1*/
+/*verification si paire our impaire odd = size/2 +1*/
 half = length / 2;
+
+if ((length % 2) == 0)
+	{
+	half = length / 2;
+	}
+else
+	{
+	half = (length + 1) / 2;
+	}
+
+	/*sortie*/
 for (index = half; index < length ; index++)
 	{
 	_putchar(str[index]);
