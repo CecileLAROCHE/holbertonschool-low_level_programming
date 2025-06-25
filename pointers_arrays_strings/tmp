@@ -1,0 +1,3 @@
+tmp = *(s + index);
+	*(s + index) = *(s + length - index - 1);
+	*(s + length - index - 1) = tmp;
