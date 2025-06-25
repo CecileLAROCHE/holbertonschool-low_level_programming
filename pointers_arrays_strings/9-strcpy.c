@@ -18,8 +18,9 @@ int index = 0;/*position sur la chaine de caractère*/
 
 while (src[index])
 	{
-	dest[index] = src[index];
-	index++;
+		dest[index] = src[index];
+		index++;
 	}
-return(dest);
+	
+	return (dest);
 }
