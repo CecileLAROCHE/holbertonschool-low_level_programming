@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 *rev_string - main entry
@@ -15,7 +14,7 @@ int length = 0; /*longueur de la chaine de caratère*/
 char tmp; /*variable temporaire*/
 int index = 0; /*position sur la chaine de caractère*/
 
-/*boucle pour evolution de l'index de 1 à (lenght/2)*/
+/*boucle pour evolution de l'index de 1 à (lenght/2)-1*/
 while (s[index++])
 	length++;
 
