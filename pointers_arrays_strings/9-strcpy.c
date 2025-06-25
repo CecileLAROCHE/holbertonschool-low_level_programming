@@ -22,6 +22,6 @@ for (index = 0; src[index] != '\0'; index++)
 	dest[index] = src[index];
 	
 	}
-	dest[index + 1] = '\0';
+	dest[index + 1] = src[index + 1];
 return(dest);
 }
