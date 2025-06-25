@@ -2,19 +2,34 @@
 #include <stdio.h>
 
 /**
-*puts_half - entry
+*print_array - entry
+*@a: tttt
+*@n: le nombre d'éléments du tableau à afficher.
 *
-*Écrivez une fonction qui affiche n éléments d'un tableau d'entiers, suivis d'un saut de ligne.
-
-Prototype : void print_array(int *a, int n);
-où n est le nombre d'éléments du tableau à afficher.
-Les nombres doivent être séparés par une virgule, suivie d'un espace.
-Les nombres doivent être affichés dans le même ordre que celui dans lequel ils sont stockés dans le tableau.
-Vous pouvez utiliser printf.
+*Écrivez une fonction qui affiche n éléments d'un tableau d'entiers,
+*suivis d'un saut de ligne.
+*
+**Prototype : void print_array(int *a, int n);
+**Les nombres doivent être séparés par une virgule, suivie d'un espace.
+**Les nombres doivent être affichés dans le même ordre que celui dans
+**lequel ils sont stockés dans le tableau.
+**Vous pouvez utiliser printf.
 */
 
 void print_array(int *a, int n)
 {
+int index = 0;/*position sur la chaine de caractère*/
 
+/*calcul du nombre de caractères*/
+while (a[index++])
+	n++;
+
+for (index = 0; index <= n ; index++)
+	{
+	printf("%d, ", a[index]);
+	}
+
+
+putchar('\n');
 }
 

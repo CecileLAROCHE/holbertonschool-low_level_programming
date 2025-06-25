@@ -20,6 +20,7 @@ int length = 0; /*longueur de la chaine de caratère*/
 int index = 0;/*position sur la chaine de caractère*/
 int half;/*moitier de la chaine*/
 
+/*calcul du nombre de caractères*/
 while (str[index++])
 	length++;
 
