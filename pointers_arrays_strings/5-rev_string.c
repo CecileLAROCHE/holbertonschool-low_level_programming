@@ -19,7 +19,7 @@ int index = 0; /*position sur la chaine de caractère*/
 while (s[index++])
 	length++;
 
-for (index = 0; index <= - 1 + length / 2  ; index++)
+for (index = 0; index <= -1 + length / 2  ; index++)
 	{
 	/*echange valeur debut et fin*/
 	tmp = s[index];
