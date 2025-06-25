@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 {
 int length = 0; /*longueur de la chaine de caratère*/
-int tmp; /*variable temporaire*/
+char tmp; /*variable temporaire*/
 int index; /*position sur la chaine de caractère*/
 
 /*calcul de la longeur de la chaine de caractère*/
@@ -22,8 +22,8 @@ while (*s++)
 for (index = 0; index < length / 2 ; index++)
 	{
 	/*Swapping values of a and  b*/
-	tmp = s[index];
-	s[index] = s[length - index];
-	s[length - index] = tmp;
+	tmp = *(s + index);
+	*(s + index) = *(s + length - index);
+	*(s + length - index) = tmp;
 	}
 }
