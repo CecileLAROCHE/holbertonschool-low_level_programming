@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
-*_atoi - 
+*_atoi - entry point
 *@s:
 *
 *Écrivez une fonction qui convertit une chaîne en entier.
@@ -21,8 +22,31 @@
 
 int _atoi(char *s)
 {
-int index = 0;/*position sur la chaine de caractère*/
+int index = 0; /*position sur la chaine de caractère*/
+int res = 0;
+int sign = 1;
+
+/*Handling negative numbers*/
+	if (s[0] == '-')
+	{
+		sign = -1;
+		index = 1;
+	}
+
+for (; s[index] != '\0'; index++)
+	{
+		if (s[index] >= '0' && s[index] <= '9')
+		{
+			res = res * 10 + (s[index] - '0');
+		}
+		else
+		{
+			return (0); /*Invalid input*/
+		}
+	}
+return (sign * res);
 
 
-
+printf('Converted number: %d\n', res);
+return (0);
 }
