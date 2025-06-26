@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
-*swap_int - main entry
+*_strncat - main entry
 *@dest: première int
 *@src: seconde int
 *@n: troisième
 *
 *Écrivez une fonction qui concatène deux chaînes.
+*
+*Return: dest
 */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 
 {
 int index = 0; /*position sur la chaine de caractère*/
@@ -19,7 +21,7 @@ int length = 0; /*longueur de la chaine de caratère*/
 while (dest[index++])
 length++;
 
-for (index = 0; src[index]; index++)
+for (index = 0; src[index] && index < n ; index++)
 {
 dest[length++] = src[index];
 }
