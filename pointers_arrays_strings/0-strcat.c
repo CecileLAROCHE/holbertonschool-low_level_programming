@@ -15,24 +15,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-int index1 = 0; /*position sur la chaine de caractère dest*/
-int index2 = 0; /*position sur la chaine de caractère src*/
-int index = 0; /*position sur la chaine de caractère final*/
-int length1 = 0; /*longueur de la chaine de caratère*/
-int length2 = 0; /*longueur de la chaine de caratère*/
+int index = 0; /*position sur la chaine de caractère*/
 int length = 0; /*longueur de la chaine de caratère*/
 
 /*calcul du nombre de caractères*/
-while (dest[index1++])
-	length1++;
-while (dest[index2++])
-	length2++;
-length = length1 + length2;
+while (dest[index++])
+		length++;
 
-for (index = index1; src[index]; index++)
+	for (index = 0; src[index]; index++)
 		dest[length++] = src[index];
-dest[length++ + 1] = '\0';
 
 	return (dest);
-
 }
