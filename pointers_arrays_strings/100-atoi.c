@@ -23,17 +23,17 @@
 int _atoi(char *s)
 {
 int index = 0; /*position sur la chaine de caractère*/
-int res = 0;
-int sign = 1;
+int res = 0; /*resultat*/
+int sign = 1; /*gestion signe*/
 
-/*Handling negative numbers*/
+/*festion du sihne de la chaine de caractère*/
 	if (s[0] == '-')
 	{
 		sign = -1;
 		index = 1;
 	}
 
-for (; s[index] != '\0'; index++)
+for (s; s[index] != '\0'; index++)
 	{
 		if (s[index] >= '0' && s[index] <= '9')
 		{
@@ -46,7 +46,4 @@ for (; s[index] != '\0'; index++)
 	}
 return (sign * res);
 
-
-printf('Converted number: %d\n', res);
-return (0);
 }
