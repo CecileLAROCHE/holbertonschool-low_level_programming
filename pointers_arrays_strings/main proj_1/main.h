@@ -1,7 +1,6 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
 
-/*project 1*/
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -15,10 +14,5 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
-
-/*project 2*/
-
-char *_strcat(char *dest, char *src);
-
 
 #endif
