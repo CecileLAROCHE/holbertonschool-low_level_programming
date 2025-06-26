@@ -22,26 +22,21 @@ int _atoi(char *s)
 {
 int index = 0; /*position sur la chaine de caractère*/
 int res = 0; /*resultat*/
-int sign = 1; /*gestion signe*/
+int sign = 1;/*gestion signe*/
 
-/*festion du sihne de la chaine de caractère*/
+while (s[index] != '\0')
+{
+/*gestion du signe de la chaine de caractère*/
 	if (s[0] == '-')
 	{
-		sign = -1;
-		index = 1;
+		sign++;
 	}
+/*detection des premiers chiffres*/
+	if (s[index] >= '0' || s[idex] <= '9')
 
-for (; s[index] != '\0'; index++)
-	{
-		if (s[index] >= '0' && s[index] <= '9')
-		{
-			res = res * 10 + (s[index] - '0');
-		}
-		else
-		{
-			return (0); /*Invalid input*/
-		}
-	}
+
+
 return (sign * res);
+}
 
 }
