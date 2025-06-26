@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
 *_atoi - entry point
@@ -33,7 +31,7 @@ int sign = 1; /*gestion signe*/
 		index = 1;
 	}
 
-for (s; s[index] != '\0'; index++)
+for (; s[index] != '\0'; index++)
 	{
 		if (s[index] >= '0' && s[index] <= '9')
 		{
