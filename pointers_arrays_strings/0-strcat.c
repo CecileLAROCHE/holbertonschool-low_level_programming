@@ -20,10 +20,12 @@ int length = 0; /*longueur de la chaine de caratère*/
 
 /*calcul du nombre de caractères*/
 while (dest[index++])
-		length++;
+length++;
 
-	for (index = 0; src[index]; index++)
-		dest[length++] = src[index];
+for (index = 0; src[index]; index++)
+{
+dest[length++] = src[index];
+}
 
-	return (dest);
+return (dest);
 }
