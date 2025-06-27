@@ -21,21 +21,23 @@ while (string[index] != '\0')
 {
 if (string[0] >= 'a' &&  string[0] <= 'z')/*cas du premier mot*/
 	{
-	string[index] -= 32;
+	string[index] -= 32;/*mettre en majuscule*/
 	}
 
 
-	if (string[index] == ' ') /*cas du premier caractère*/
+	if (string[index] == ' ' || string[index] == '\t' || string[index] == '\n' ||
+	string[index] == ',' || string[index] == ';' || string[index] == '.' ||
+	string[index] == '!' || string[index] == '?' || string[index] == '"' ||
+	string[index] == '(' || string[index] == ')' || string[index] == '{' ||
+	string[index] == '}') /*cas du premier caractère*/
 	{
 		if (string[index + 1] >= 'a' &&  string[index + 1] <= 'z')
 			{
-			string[index + 1] -= 32;
+			string[index + 1] -= 32; /*mettre en majuscule*/
 			}
-			
 	}
-	
 	index++;
-	
-}string[index] = '\n';
+
+}
 return (string);
 }
