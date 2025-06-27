@@ -20,11 +20,11 @@ int index = 0; /*position sur la chaine de caractère*/
 while (a[index++])
 	n++;
 
-for (index = 0; index <= -1 + n / 2  ; n++)
+for (index = 0; index <= -1 + n / 2  ; index++)
 	{
 	/*echange valeur debut et fin*/
-	tmp = a[n];
-	a[n] = a[n - n - 1];
-	a[n - n - 1] = tmp;
+	tmp = a[index];
+	a[index] = a[n - index - 1];
+	a[n - index - 1] = tmp;
 	}
 }
