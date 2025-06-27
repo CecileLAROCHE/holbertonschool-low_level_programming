@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-**leet - main entry
+*leet - main entry
 *@str: string
 *
 *Écrivez une fonction qui affiche un caractère sur deux d'une chaîne,
@@ -9,7 +9,7 @@
 */
 
 
-char *leet(char *)
+char *leet(char *str)
 
 {
 

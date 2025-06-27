@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
 *reverse_array - une fonction qui inverse le contenu d'un tableau d'entiers.
 *@a: don't know
@@ -27,4 +28,5 @@ for (index = n - 1; index >= n / 2  ; index--)
 
 
 }
+return(index)
 }
