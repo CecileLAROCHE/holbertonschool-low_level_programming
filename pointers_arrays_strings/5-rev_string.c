@@ -18,11 +18,10 @@ int index = 0; /*position sur la chaine de caractère*/
 while (s[index++])
 	length++;
 
-for (index = 0; index <= -1 + length / 2  ; index++)
+	for (index = n - 1; index >= n / 2; index--)
 	{
-	/*echange valeur debut et fin*/
-	tmp = s[index];
-	s[index] = s[length - index - 1];
-	s[length - index - 1] = tmp;
+		tmp = a[n - 1 - index];
+		a[n - 1 - index] = a[index];
+		a[index] = tmp;
 	}
 }
