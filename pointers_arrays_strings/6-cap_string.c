@@ -16,18 +16,14 @@ char *cap_string(char *string)
 {
 int index = 0; /*position sur la chaine de caractère*/
 
-
 /*condition d'arret de la boucle*/
 while (string[index] != '\0')
-
 {
-if (string[index] == 0)/*cas du premier caractère*/
+if (string[0] >= 'a' &&  string[0] <= 'z')/*cas du premier mot*/
 	{
-	if (string[index] >= 'a' &&  string[index] <= 'z')
-			{
-			string[index] -= 32;
-			}
-		}
+	string[index] -= 32;
+	}
+
 
 	if (string[index] == ' ') /*cas du premier caractère*/
 	{
