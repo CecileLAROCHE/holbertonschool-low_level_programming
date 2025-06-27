@@ -21,7 +21,7 @@ char *leet(char *str)
 {
 char Maj[] = "AEOLT"; /*chaine des majuscules*/
 char Min[] = "aeolt"; /*chaine des minuscules*/
-char chif[] = "43071"; /*chaine des chiffres*/
+char chif[] = "43017"; /*chaine des chiffres*/
 int index = 0;/*position sur la chaine de caractère*/
 int i;
 
