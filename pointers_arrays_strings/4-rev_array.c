@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 *reverse_array - une fonction qui inverse le contenu d'un tableau d'entiers.
@@ -21,10 +20,11 @@ int index = 0; /*position sur la chaine de caractère*/
 for (index = n - 1; index >= n / 2  ; index--)
 	{
 	/*echange valeur debut et fin*/
+	tmp = a[index];
+	a[index] = a[n - index - 1];
+	a[n - index - 1] = tmp;
+	
 
-tmp = a[n - 1 - index];
-		a[n - 1 - index] = a[index];
-		a[index] = tmp;
 
 }
 }
