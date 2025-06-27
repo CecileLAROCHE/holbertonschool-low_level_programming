@@ -17,14 +17,12 @@ char tmp; /*variable temporaire*/
 int index = 0; /*position sur la chaine de caractère*/
 
 /*boucle pour evolution de l'index de 1 à (lenght/2)-1*/
-while (a[index++])
-	n++;
 
-	for (index = n - 1; index >= n / 2; index--)
+for (index = n - 1; index >= n / 2  ; index--)
 	{
-		tmp = a[n - 1 - index];
-		a[n - 1 - index] = a[index];
-		a[index] = tmp;
-	
+	/*echange valeur debut et fin*/
+	tmp = a[index];
+	a[index] = a[n - index - 1];
+	a[n - index - 1] = tmp;
 	}
 }
