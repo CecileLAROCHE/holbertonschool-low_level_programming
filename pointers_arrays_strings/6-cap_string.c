@@ -32,7 +32,9 @@ if (string[0] >= 'a' &&  string[0] <= 'z')/*cas du premier mot*/
 			string[index + 1] -= 32;
 			}
 	}
+	
 	index++;
-}
+	
+}string[index] = '\n';
 return (string);
 }
