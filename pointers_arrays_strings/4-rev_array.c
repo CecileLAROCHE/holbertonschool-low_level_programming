@@ -20,7 +20,7 @@ int index = 0; /*position sur la chaine de caractère*/
 while (a[index++])
 	n++;
 
-for (index = 0; index <= -1 + n / 2  ; index++)
+for (index = n - 1; index >= n / 2  ; index--)
 	{
 	/*echange valeur debut et fin*/
 	tmp = a[index];
