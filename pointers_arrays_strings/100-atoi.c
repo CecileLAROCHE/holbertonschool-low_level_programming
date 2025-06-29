@@ -33,12 +33,10 @@ int i;
 while (s[index] != '\0')
 {
 	if (s[index] >= '0' && s[index] <= '9')
-	{
+		{
 		first = index;
-		break;
-	}
-	index++;
-	}
+		break; }
+	index++; }
 	/* Si aucun chiffre trouvé */
 	if (first == -1)
 		return (0);
@@ -47,14 +45,12 @@ while (s[index] != '\0')
 	while (s[index] >= '0' && s[index] <= '9')
 	{
 	last = index;
-	index++;
-	}
+	index++; }
 	/* Compter les '-' avant le premier chiffre */
 	for (index = 0; index < first; index++)
 	{
 		if (s[index] == '-')
-		compteur++;
-	}
+		compteur++; }
 	if (compteur % 2 != 0)
 	sign = -1;
 	/* Construire le nombre */
