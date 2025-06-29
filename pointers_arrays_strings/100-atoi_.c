@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *_atoi - entry point
@@ -22,42 +23,49 @@
 int _atoi(char *s)
 {
 int index = 0; /*position sur la chaine de caractère*/
-int res = 0; /*resultat*/
+int res=0; /*resultat*/
 int compteur = 0; /*compte no '-'*/
 int sign = 1;/*gestion signe*/
+int lenght = 0; /*sert pour le calcul du signe*/
 int first = 0; /*premier chiffre*/
 int last = 0; /*dernier chiffre à prendre en compte*/
 int len = 0; /*longueur du chiffre*/
 
-/* Trouver le premier chiffre */
-while (s[index] != '\0')
+
+while (s[index] != '\0') /*parcour de la chaine*/
 	{
-if (s[index] >= '0' && s[index] <= '9')
-	{
+	/*determiation first*/
+	if (s[index] >= '0' &&  s[index] <= '9')
+		{
 		first = index;
 		break;
-	}
+		}
 	index++;
 	}
-	/* Trouver le dernier chiffre à partir de first */
+	/*determiation last à partir de first */
 	index = first;
 	while (s[index] >= '0' && s[index] <= '9')
 	{
 		last = index;
 		index++;
 	}
-	/* Compter le nombre de '-' avant le premier chiffre*/
-	for (index = 0; index < first; index++)
+/*gestion du signe de la chaine de caractère*/
+for (index = 0; index < first; index++)
+{
+if (s[index] == '-')
 	{
-		if (s[index] == '-')
-			compteur++;
+	compteur++;
 	}
 	if (compteur % 2 == 1)
+	{
 		sign = -1;
-	/* Construire le nombre à partir des chiffres trouvés */
-	for (len = first; len <= last; len++)
+	}
+}
+/*recupération des chiffres de fisrt à last*/
+for (len = first; len <= last ; len++)
 	{
 	res = res * 10 + (s[len] - '0');
 	}
-	return (res * sign);
+}
+return (res * sign);
 }
