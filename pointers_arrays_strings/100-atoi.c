@@ -21,43 +21,44 @@
 
 int _atoi(char *s)
 {
-int index = 0; /*position sur la chaine de caractère*/
-int res = 0; /*resultat*/
-int compteur = 0; /*compte no '-'*/
-int sign = 1;/*gestion signe*/
-int first = 0; /*premier chiffre*/
-int last = 0; /*dernier chiffre à prendre en compte*/
-int len = 0; /*longueur du chiffre*/
+int index = 0;
+int res = 0;
+int compteur = 0;
+int sign = 1;
+int first = -1;
+int last = -1;
+int i;
 
 /* Trouver le premier chiffre */
 while (s[index] != '\0')
-	{
-if (s[index] >= '0' && s[index] <= '9')
+{
+	if (s[index] >= '0' && s[index] <= '9')
 	{
 		first = index;
 		break;
 	}
 	index++;
 	}
+	/* Si aucun chiffre trouvé */
+	if (first == -1)
+		return (0);
 	/* Trouver le dernier chiffre à partir de first */
 	index = first;
 	while (s[index] >= '0' && s[index] <= '9')
 	{
-		last = index;
-		index++;
+	last = index;
+	index++;
 	}
-	/* Compter le nombre de '-' avant le premier chiffre*/
+	/* Compter les '-' avant le premier chiffre */
 	for (index = 0; index < first; index++)
 	{
 		if (s[index] == '-')
-			compteur++;
+		compteur++;
 	}
-	if (compteur % 2 == 1)
-		sign = -1;
-	/* Construire le nombre à partir des chiffres trouvés */
-	for (len = first; len <= last; len++)
-	{
-	res = res * 10 + (s[len] - '0');
-	}
+	if (compteur % 2 != 0)
+	sign = -1;
+	/* Construire le nombre */
+	for (i = first; i <= last; i++)
+	res = res * 10 + (s[i] - '0');
 	return (res * sign);
 }
