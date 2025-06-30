@@ -15,19 +15,19 @@ char *_strstr(char *haystack, char *needle)
 int index;
 
 if (*needle == '\0')
-	{
-	return (haystack);
-	}
+{
+return (haystack);
+}
 while (*haystack != '\0')
-	{
-		index = 0;
-		while (needle[index] != '\0' && haystack[index] == needle[index])
-		{
-			index++;
-		}
-		if (needle[index] == '\0')
-			return (haystack);
-		haystack++;
-	}
-	return (NULL);
+{
+index = 0;
+while (needle[index] != '\0' && haystack[index] == needle[index])
+{
+index++;
+}
+if (needle[index] == '\0')
+return (haystack);
+haystack++;
+}
+return (NULL);
 }
