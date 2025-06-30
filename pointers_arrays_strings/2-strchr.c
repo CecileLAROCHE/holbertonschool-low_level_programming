@@ -1,13 +1,15 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
-*_strchr - main entry
-*@s: target
-*@c: constant byte
+*_strchr - Localise un caractère dans une chaîne de caractères
+*@s: la chaîne à analyser
+*@c: le caractère à rechercher
 *
-*ecrire un fonction qui copie l'espace memoire
+*Écrivez une fonction qui localise un caractère dans une chaîne.
 *
-*Return: returns new value of target
+*Return: un pointeur vers la première occurrence du caractère c
+*dans la chaîne s, ou NULL si le caractère n’est pas trouvé
 */
 
 char *_strchr(char *s, char c)
@@ -20,5 +22,9 @@ while (*s != '\0')
 	}
 	s++;
 	}
-return (dest);
+if (c == '\0')
+{
+	return (s);
+}
+return (NULL);
 }
