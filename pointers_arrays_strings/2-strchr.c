@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+
 /**
 *_strchr - main entry
 *@s: target
@@ -20,5 +20,5 @@ while (*s != '\0')
 	}
 	s++;
 	}
-return (NULL);
+return (dest);
 }
