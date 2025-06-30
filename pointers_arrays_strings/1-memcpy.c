@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_memset - main entry
+*_memcpy - main entry
 *@dest: target
 *@src: constant byte
 *@n: number of byte
@@ -14,11 +14,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 while (n)
 {
-	s[n - 1] = scr;
-	n--
+	dest[n - 1] = *src;
+	n--;
 }
-return ()
-
-
-
+return (dest);
 }
