@@ -9,10 +9,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int i;
+	printf("%d\n", argc - 1);
 
-	/* Affiche le nombre total d'arguments */
-	printf("%d\n", argc);
-
+	(void)argv;
 	return (0);
 }
