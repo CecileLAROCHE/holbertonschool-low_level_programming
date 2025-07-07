@@ -1,20 +1,40 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
-* c_strdup - creates an array of char
-* @str: The size of the array
-* Return: a pointer to the array
+* c_strdup - return a pointer to a newly allocated space with
+* a copy of the str given as parameter
+* @str: The string to copy
+* Return: a pointer to the allocated space
 */
 
 char *_strdup(char *str)
 
 {
+char *dup;
 int len;
+int index;
 
 if(str == NULL)
     return(NULL);
 
-/*calcul longeur de la chaine*/
+for (len = 0; str[len] != '\0'; len++)
+{
+}
 
+dup = (char *)malloc(sizeof(char) * (size + 1));
+if (dup == NULL)
+{
+return (NULL);
+}
+
+for (index = 0; str[index] != '\0'; index++)
+{
+dup[index] = str[index];
+}
+
+dup[index] = '\0';
+
+return (dup);
 
 }
