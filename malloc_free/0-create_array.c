@@ -8,14 +8,14 @@
 * Return: a pointer to the array
 */
 
- char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 char *a;
 unsigned int i;
 
 if (size == 0)
 {
-return(NULL);
+return (NULL);
 }
 
 a = (char *)malloc((sizeof(char) * size));
