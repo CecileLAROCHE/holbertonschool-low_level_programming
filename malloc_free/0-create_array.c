@@ -13,7 +13,7 @@
 char *a;
 unsigned int i;
 
-if ( size == 0)
+if (size == 0)
 {
 return(NULL);
 }
