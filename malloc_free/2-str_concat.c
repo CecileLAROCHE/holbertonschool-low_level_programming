@@ -11,42 +11,44 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *concat = NULL;
-int length1 = 0;
-int length2 = 0;
-int index1 = 0;
-int index2 = 0;
+	char *new_str;
+	int index1;
+	int index2;
+	int size1;
+	int size2;
 
-if(s1 == NULL)
-s1 = "";
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 
-if(s2 == NULL)
-s2 = "";
+	for (size1 = 0; s1[size1] != '\0'; size1++)
+	{
+	}
+	for (size2 = 0; s2[size2] != '\0'; size2++)
+	{
+	}
+	new_str = malloc(sizeof(char) * (size1 + size2 + 1));
+	if (new_str == NULL)
+	{
+		return (NULL);
+	}
 
-while (*s1++)
-	length1++;
+	for (index1 = 0; s1[index1] != '\0'; index1++)
+	{
+		new_str[index1] = s1[index1];
+	}
 
-while (*s2++)
-	length2++;
+	for (index2 = 0; s2[index2] != '\0'; index2++)
+	{
+		new_str[index1 + index2] = s2[index2];
+	}
 
-/*Allocate memory for the concatenated string*/
-concat = malloc(sizeof(char) * (length1 + length2 + 1));
+	new_str[size1 + size2] = '\0';
 
-/*Check if memory allocation was successful*/	
-if (concat == NULL)
-return (NULL);
-
-for (index1 = 0; s1[index1] != '\0'; index1++)
-{
-	concat[index1] = s1[index1];
-}	
-for (index2 = 0; s2[index2] != '\0'; index2++)
-{
-	concat[index1 + index2] = s2[index2];
-}
-
-
-concat[index1 + index2] = '\0';
-
-return (concat);
+	return (new_str);
 }
