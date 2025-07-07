@@ -16,7 +16,7 @@ int len;
 int index;
 
 if(str == NULL)
-    return(NULL);
+return(NULL);
 
 for (len = 0; str[len] != '\0'; len++)
 {
