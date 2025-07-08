@@ -1,21 +1,19 @@
 #include "dog.h"
 #include <stdio.h>
 
-
-
 /**
- * _strlen - calcule la longueur d'une chaîne
- * @s: chaîne de caractères
- * Return: longueur de la chaîne
- */
+*_strlen - calcule la longueur d'une chaîne
+*@s: chaîne de caractères
+*Return: longueur de la chaîne
+*/
+
 unsigned int _strlen(char *s)
 {
-    unsigned int len = 0;
+unsigned int len = 0;
 
-    while (s[len] != '\0')
-        len++;
-
-    return len;
+while (s[len] != '\0')
+	len++;
+return (len);
 }
 
 /**
@@ -45,32 +43,26 @@ if (dog == NULL)
 
 name_copy = malloc(_strlen(name) + 1);
 if (name_copy == NULL)
-{
 	free(dog);
 	return (NULL);
-}
+
 for (i = 0; name[i] != '\0'; i++)
 name_copy[i] = name[i];
 name_copy[i] = '\0';
 
 owner_copy = malloc(_strlen(owner) + 1);
 if (owner_copy == NULL)
-    {
-        free(name_copy);
-        free(dog);
-        return (NULL);
-    }
+free(name_copy);
+free(dog);
+return (NULL);
 
 for (i = 0; owner[i] != '\0'; i++)
-        owner_copy[i] = owner[i];
-    owner_copy[i] = '\0';
+	owner_copy[i] = owner[i];
+	owner_copy[i] = '\0';
 
-    /* Remplir la structure */
-    dog->name = name_copy;
-    dog->age = age;
-    dog->owner = owner_copy;
-    
+	dog->name = name_copy;
+	dog->age = age;
+	dog->owner = owner_copy;
 
-
-    return (dog);
+	return (dog);
 }
