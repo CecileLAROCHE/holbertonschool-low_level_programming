@@ -34,15 +34,11 @@ for (size1 = 0; s1[size1] != '\0'; size1++)
 for (size2 = 0; s2[size2] != '\0'; size2++)
 {
 }
-
+/*If n is greater than the length of s2, we only concatenate s2's length*/
 if (n >= size2)
-{
-    size3 = size2;
-}
+	size3 = size2;
 else
-{
-    size3 = n;
-}   
+	size3 = n;
 
 new_str = malloc(sizeof(char) * (size1 + size3 + 1));
 if (new_str == NULL)
@@ -56,12 +52,12 @@ for (index1 = 0; s1[index1] != '\0'; index1++)
 }
 
 
-	for (index2 = 0; s2[index2] != '\0'; index2++)
-	{
-		new_str[index1 + index2] = s2[index2];
-	}
+for (index2 = 0; s2[index2] != '\0'; index2++)
+{
+	new_str[index1 + index2] = s2[index2];
+}
 
-new_str[size1 + size2] = '\0';
+new_str[size1 + size3] = '\0';
 
 return (new_str);
 }
