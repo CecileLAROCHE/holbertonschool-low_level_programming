@@ -10,59 +10,83 @@
 
 unsigned int _strlen(char *s)
 {
-unsigned int len = 0;
+int len = 0;
 
-while (s[len] != '\0')
+while (s[len] && s[len] != ' ')
 	len++;
 return (len);
 }
 
 /**
+*count_words - compte le nombre de mots dans une chaîne
+*@str: la chaîne à analyser
+*Return: le nombre de mots
+*/
+
+int count_words(char *str)
+{
+	int count = 0, in_word = 0;
+
+	while (*str)
+	{
+		if (*str != ' ' && in_word == 0)
+		{
+			in_word = 1;
+			count++;
+		}
+		else if (*str == ' ')
+		{
+			in_word = 0;
+		}
+		str++;
+	}
+	return (count);
+}
+
+/**
 *strtow - splits a string into words
 * @str: the string to split
-*
 *Return: a pointer to an array of strings (words), or NULL on failure
 */
 
 char **strtow(char *str)
 {
-int index;
-int word_count = 0;
-int in_word = 0;
-int total_len = 0;
+	int i = 0, k = 0, len, j, word_count;
+	char **words;
 
-/*Validation des paramètres*/
-if (str == NULL || *str == '\0')
-{
-return (NULL);
-}
-
-/*Compter le nombre de mots*/
-for (index = 0; str[index] != '\0'; index++)
-{
-	if (str[index] == ' ' && in_word == 0)
-	{
-		in_word = 1;
-		word_count++;
-	}
-	else if (str[index] == ' ')
-	{
-		in_word = 0;
-	}
-}
-
-/*Calculer la taille totale nécessaire*/
-for (index = 0; index < str; index++)
-	total_len += _strlen(av[index]) + 1;
-
-/*Allocation de mémoire*/
-new_str = malloc(sizeof(char) * (total_len + 1));
-	if (new_str == NULL)
-	{
+	if (str == NULL || *str == '\0')
 		return (NULL);
+
+	word_count = count_words(str);
+	if (word_count == 0)
+		return (NULL);
+
+	words = malloc(sizeof(char *) * (word_count + 1));
+	if (words == NULL)
+		return (NULL);
+
+	while (str[i] && k < word_count)
+	{
+		while (str[i] == ' ')
+			i++;
+
+		len = _strlen(&str[i]);
+		words[k] = malloc(sizeof(char) * (len + 1));
+		if (words[k] == NULL)
+		{
+			while (k--)
+				free(words[k]);
+			free(words);
+			return (NULL);
+		}
+
+		for (j = 0; j < len; j++)
+			words[k][j] = str[i + j];
+		words[k][j] = '\0';
+		i += len;
+		k++;
 	}
+	words[k] = NULL;
 
-
-printf("Number of words: %d\n", word_count); /*à supprimer*/
-return (NULL);  /* temporaire */
+	return (words);
 }
