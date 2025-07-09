@@ -29,7 +29,7 @@ else if (d->age < 0.0)
 }
 else
 {
-	printf("Age: %.1f\n", d->age);
+	printf("Age: %f\n", d->age);
 }
 
 if (d->owner == NULL)
