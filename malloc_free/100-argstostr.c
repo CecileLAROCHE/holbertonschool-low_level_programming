@@ -53,8 +53,6 @@ new_str = malloc(sizeof(char) * (total_len + 1));
 
 for (index1 = 0; index1 < ac; index1++)
 {
-	
-
 	for (j = 0; av[index1][j] != '\0'; j++)
 	{
 		new_str[index2++] = av[index1][j];
