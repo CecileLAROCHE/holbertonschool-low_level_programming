@@ -13,8 +13,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *new_str;
-int index1 = 0;
-int index2 = 0;
+unsigned int index1 = 0;
+unsigned int index2 = 0;
 unsigned int size1 = 0;
 unsigned int size2 = 0;
 unsigned int size3 = 0;
@@ -52,7 +52,7 @@ for (index1 = 0; s1[index1] != '\0'; index1++)
 }
 
 
-for (index2 = 0; s2[index2] != '\0'; index2++)
+for (index2 = 0; index2 < size3; index2++)
 {
 	new_str[index1 + index2] = s2[index2];
 }
