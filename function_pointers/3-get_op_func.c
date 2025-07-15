@@ -6,7 +6,6 @@
 *
 * Return: A pointer to the function that corresponds to the operator
 *         or NULL if no operator matches
- */
-
+*/
 
 int (*get_op_func(char *s))(int, int);
