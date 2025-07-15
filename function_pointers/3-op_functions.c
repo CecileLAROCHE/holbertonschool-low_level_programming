@@ -19,7 +19,7 @@ int op_add(int a, int b)
 *Return: The result of the subtraction
 */
 
-int op_sub(int a, int b);
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
@@ -31,7 +31,7 @@ int op_sub(int a, int b);
 *Return: The result of the multiplication
 */
 
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a*b);
 }
@@ -43,7 +43,7 @@ int op_mul(int a, int b);
 *Return: The result of the division
 */
 
-int op_div(int a, int b);
+int op_div(int a, int b)
 {
 	return (a / b);
 }
@@ -55,7 +55,7 @@ int op_div(int a, int b);
 *Return: The result of the modulus operation
 */
 
-int op_mod(int a, int b);
+int op_mod(int a, int b)
 {
 	return (a % b);
 }
