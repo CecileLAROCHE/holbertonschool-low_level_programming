@@ -2,12 +2,12 @@
 #include <stdarg.h>
 
 /**
-* sum_them_all - Returns the sum of all its parameters
+* * sum_them_all - Returns the sum of all its parameters
 * @n: The number of parameters
-*	
+*
 * Return: The sum of all parameters, or 0 if n is 0
 * If no parameters are passed, returns 0.
-*/	
+*/
 
 int sum_them_all(const unsigned int n, ...)
 {
@@ -17,10 +17,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 	{
-		return(0);
+		return (0);
 	}
-	
-	va_start(ap, n); 
+
+	va_start(ap, n);
 	for (i = 0; i < n; i++)
 		total += va_arg(ap, int);
 	va_end(ap);
