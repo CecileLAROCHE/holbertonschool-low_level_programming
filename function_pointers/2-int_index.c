@@ -21,7 +21,7 @@ int i;
 		return (-1);
 	}
 
-	for (i = 0; i < size; i ++)
+	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i]) != 0)
 		{
