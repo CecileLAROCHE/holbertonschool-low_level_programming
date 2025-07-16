@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /** 
-*get_op_func - Selects the correct function to perform the operation
+*op_add - Selects the correct function to perform the operation
 *@a: The first integer
 *@b: The second integer
 *Return: The result of the addition
