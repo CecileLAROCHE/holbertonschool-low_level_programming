@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-/** 
+/**
 *op_add - Selects the correct function to perform the operation
 *@a: The first integer
 *@b: The second integer
@@ -33,7 +33,7 @@ int op_sub(int a, int b)
 
 int op_mul(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }
 
 /**
