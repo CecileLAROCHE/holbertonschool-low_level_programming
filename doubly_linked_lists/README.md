@@ -1,9 +1,9 @@
 # C - Doubly linked lists
 
-<p align="center"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGVsbmhta2d6bGFsdW9yMDFzNzV5ZGJrOGhwY3oyeGV1dHdocm0xNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0AdPgyylXNJA5qbDlv/giphy.gif" alt=link" /><!-- markdownlint-disable-line MD033 --></p>
- 
+<p align="center"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGVsbmhta2d6bGFsdW9yMDFzNzV5ZGJrOGhwY3oyeGV1dHdocm0xNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0AdPgyylXNJA5qbDlv/giphy.gif" alt="link" /><!-- markdownlint-disable-line MD033 --></p>
 
 ## 0. Print list
+
 mandatory
 
 Write a function that prints all the elements of a dlistint_t list.
@@ -12,16 +12,16 @@ Write a function that prints all the elements of a dlistint_t list.
     Return: the number of nodes
     Format: see example
 
-
 ## 1. List length
+
 mandatory
 
 Write a function that returns the number of elements in a linked dlistint_t list.
 
     Prototype: size_t dlistint_len(const dlistint_t *h);
 
-
 ## 2. Add node
+
 mandatory
 
 Write a function that adds a new node at the beginning of a dlistint_t list.
@@ -29,8 +29,8 @@ Write a function that adds a new node at the beginning of a dlistint_t list.
     Prototype: dlistint_t *add_dnodeint(dlistint_t **head, const int n);
     Return: the address of the new element, or NULL if it failed
 
-
 ## 3. Add node at the end
+
 mandatory
 
 Write a function that adds a new node at the end of a dlistint_t list.
@@ -38,16 +38,16 @@ Write a function that adds a new node at the end of a dlistint_t list.
     Prototype: dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
     Return: the address of the new element, or NULL if it failed
 
-
 ## 4. Free list
+
 mandatory
 
 Write a function that frees a dlistint_t list.
 
     Prototype: void free_dlistint(dlistint_t *head);
 
-
 ## 5. Get node at index
+
 mandatory
 
 Write a function that returns the nth node of a dlistint_t linked list.
@@ -56,8 +56,8 @@ Write a function that returns the nth node of a dlistint_t linked list.
     where index is the index of the node, starting from 0
     if the node does not exist, return NULL
 
-
 ## 6. Sum list
+
 mandatory
 
 Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
@@ -65,8 +65,8 @@ Write a function that returns the sum of all the data (n) of a dlistint_t linked
     Prototype: int sum_dlistint(dlistint_t *head);
     if the list is empty, return 0
 
-
 ## 7. Insert at index
+
 mandatory
 
 Write a function that inserts a new node at a given position.
@@ -78,8 +78,8 @@ Write a function that inserts a new node at a given position.
 
 Your files 2-add_dnodeint.c and 3-add_dnodeint_end.c will be compiled during the correction
 
-
 ## 8. Delete at index
+
 mandatory
 
 Write a function that deletes the node at index index of a dlistint_t linked list.
