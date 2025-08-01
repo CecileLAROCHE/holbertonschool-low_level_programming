@@ -21,25 +21,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = ht->array[index];
 
 	while (node)
-	{ /*verification de l'existance de la clé*/
 		if (strcmp(node->key, key) == 0)
-		{
 			free(node->value);
 			node->value = strdup(value);
 			if (node->value == NULL)
-			{
 				return (0);
-			}
 		return (1);
-		}
 	node = node->next;
-	}
 
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == 0)
-		{
-			return (0);
-		}
+	{
+		return (0);
+	}
 
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
